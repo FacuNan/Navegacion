@@ -1,0 +1,36 @@
+<div class="card mat-card" id="skill" @enterState>
+    <div class="row">
+        <div class="text-center col-12">
+
+            <h1>Hard & Soft Skills</h1>
+            <button type="button" class="btn btn-dark" *ngIf="isLogged" routerLink="nuevoskills">
+                Nuevo Skills
+            </button>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" *ngFor="let Skills of SKI">
+            <h2>{{Skills.nombre}}</h2>
+
+            <circle-progress
+  [percent]="Skills.porcentaje"
+  [radius]="100"
+  [outerStrokeWidth]="10"
+  [innerStrokeWidth]="30"
+  [outerStrokeColor]="Skills.ColorExterno"
+  [innerStrokeColor]="Skills.ColorInterior"
+  [animation]="true"
+  [animationDuration]="600"
+  [imageSrc]="Skills.imagen"
+  [showImage]="true"
+  [imageHeight]="60"
+  [imageWidth]="60"
+
+></circle-progress>
+            <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}"*ngIf="isLogged" >
+                <i class="bi bi-pencil-fill"></i></button>
+            <button class="btn btn-danger" (click)="delete(Skills.id)"*ngIf="isLogged" >
+                <i class="bi bi-trash-fill"></i></button>
+        </div>
+
+     
+    </div>

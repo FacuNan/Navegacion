@@ -1,0 +1,35 @@
+img{
+    border-radius: 50%;
+}
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background-image: url(https://img.freepik.com/foto-gratis/holograma-interfaz-programacion-aplicaciones_23-2149092255.jpg?w=740&t=st=1660529407~exp=1660530007~hmac=4f12e98b862b0dc6f244befef806c8fb4275d0aacc500b5673c666874a3ef159);
+  background-repeat:no-repeat;
+  background-size: auto 100%;
+}
+
+h1{
+  color: oldlace;
+  position: absolute;
+  bottom: 90%;
+}
+
+
+  
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+    #cancelar{
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }

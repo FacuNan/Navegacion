@@ -1,0 +1,57 @@
+body{
+    background-image: url(https://img.freepik.com/vector-gratis/tecnologia-red-futurista-azul_53876-97395.jpg?w=740&t=st=1659467668~exp=1659468268~hmac=9e1d29b0dd792efeffd70353d72c8a3b23c94e2fe3bd3ac5c28161bea669f0f3)
+}
+
+   
+
+.mat-card{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52379.jpg?w=900&t=st=1659467553~exp=1659468153~hmac=508fb2650d7a59d5e08db99d3347e8b1ec9ed5a7f572e562a405696d8645ac3b);
+    margin:6px 0;
+    border-radius: 6px;
+    padding:6px 5px;
+    border: greenyellow 5px solid;
+   
+
+}
+
+div#portada{
+    width:100%;
+    height: 100%;
+    position: relative;
+    border-radius :32px;
+    }
+    
+    video{
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+    }
+    
+    div#foto-perfil{
+       
+        height: 100%;
+    }
+    div#foto-perfil img{
+        width: 18%;
+        height:25%;
+        border-radius: 50%;
+        position:absolute;
+        top:63%;
+        left:2%;
+    }
+    .btn-edit#foto-perfil{
+        position: absolute;
+        left: 25%;
+       top:79%;
+        z-index:1;
+    }
+
+    .btn-edit#video{
+        position:absolute;
+        left:95%;
+        top:5%;
+        z-index: 1;
+    }
+
